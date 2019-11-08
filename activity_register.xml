@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/ConfirmPasswordTextField2"
+        app:layout_constraintTop_toTopOf="@+id/ConfirmPasswordTextField2"
+        app:srcCompat="@drawable/passwordlogo" />
+
+    <EditText
+        android:id="@+id/usernameTextField2"
+        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTextField2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <EditText
+        android:id="@+id/passwordTextField2"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:shadowColor="#000000"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <EditText
+        android:id="@+id/ConfirmPasswordTextField2"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:shadowColor="#000000"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTextField2"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextField2" />
+
+    <TextView
+        android:id="@+id/textPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retype Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmPasswordTextField2"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/usernameTextField2"
+        app:layout_constraintStart_toStartOf="@+id/usernameTextField2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        app:layout_constraintEnd_toStartOf="@+id/usernameTextField2"
+        app:layout_constraintTop_toTopOf="@+id/usernameTextField2"
+        app:srcCompat="@drawable/profilelogo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordTextField2"
+        app:layout_constraintTop_toTopOf="@+id/passwordTextField2"
+        app:srcCompat="@drawable/passwordlogo" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="277dp"
+        android:layout_height="244dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText2"
+        app:srcCompat="@drawable/pngguruyalgj" />
+
+    <Button
+        android:id="@+id/regButton2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPasswordTextField2"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <TextView
+        android:id="@+id/loginText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? LOGIN!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextField2"
+        app:layout_constraintVertical_bias="0.388" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
